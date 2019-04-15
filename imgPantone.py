@@ -1,11 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
 
-# drawColorAlias = "Blooming Dahlia"
-# drawColorCode = "13-1520"
-# drawColorHex = "#72DEC2"
-# drawColorRgb = "114, 222, 194"
-# filename = 'out_bot.png'
-
 def drawPantone(drawColorAlias, drawColorCode, drawColorHex, drawColorRgb, filename):
     # Returns the name of the image file
     mode = 'RGBA'
@@ -24,7 +18,7 @@ def drawPantone(drawColorAlias, drawColorCode, drawColorHex, drawColorRgb, filen
     img = Image.new(mode, size, '#FFFFFF')
 
     # In case you wanted to use a frame
-    # frame = Image.open("bg_bot2.png").convert('RGBA')
+    # frame = Image.open("frame.png").convert('RGBA')
     # img.paste(frame, (0, 0), frame)
 
     d = ImageDraw.Draw(img)
