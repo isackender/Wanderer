@@ -4,7 +4,7 @@ pantone_codes = []
 pantone_hex = []
 pantone_rgb = []
 
-databasePantone = "database-pantone"
+databasePantone = "database/database-pantone"
 
 with open(databasePantone) as datafile:
     megalist = list(zip(*(line.strip().split(' \t') for line in datafile)))
